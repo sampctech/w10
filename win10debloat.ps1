@@ -20,6 +20,7 @@
 #	- One Command to launch and run
 #	- Chocolatey Install
 #	- O&O Shutup10 CFG and Run
+#	- Google Chrome
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #
@@ -29,145 +30,167 @@ $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
 
-	### External Program Setup
+  ### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	"InstallAdobe",
-	"Install7Zip",
+  "InstallChocoGUI",
+  "InstallDotNet3.5",
+	"InstallMSVCR",
+	"InstallJava",
+  "Install7Zip",
+  #"InstallAdobeRR",
+	"InstallChrome",
+	"InstallFirefox",
+	"InstallGimp",
+	"InstallInkscape",
+	"InstallAtom",
+	"InstallLBO-fresh",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+  "InstallSublime",
+	#"InstallMediaPlayerClassic",
+	"InstallVLC",
+  "InstallQdir",
+  "InstallTeamviewer",
+  "InstallDOSBox",
+  "InstallEpic",
+  "InstallGOG",
+  "InstallGZDoom",
+  "InstallBRDoom",
+  "InstallDoomskr",  
+  "InstallLaunchbox",
+  "InstallSteam",
+  "InstallUplay",
 
 	### Windows Apps
 	"DebloatAll",
 
 	### Privacy Tweaks ###
-	"DisableTelemetry",				# "EnableTelemetry",
-	"DisableWiFiSense",				# "EnableWiFiSense",
-	"DisableSmartScreen",			# "EnableSmartScreen",
-	"DisableWebSearch",				# "EnableWebSearch",
-	"DisableAppSuggestions",		# "EnableAppSuggestions",
-	"DisableActivityHistory",		# "EnableActivityHistory",
-	"DisableBackgroundApps",		# "EnableBackgroundApps",
-	"DisableLocationTracking",		# "EnableLocationTracking",
-	"DisableMapUpdates",			# "EnableMapUpdates",
-	"DisableFeedback",				# "EnableFeedback",
+	"DisableTelemetry",		# "EnableTelemetry",
+	"DisableWiFiSense",		# "EnableWiFiSense",
+	"DisableSmartScreen",		# "EnableSmartScreen",
+	"DisableWebSearch",		# "EnableWebSearch",
+	"DisableAppSuggestions",	# "EnableAppSuggestions",
+	"DisableActivityHistory",	# "EnableActivityHistory",
+	"DisableBackgroundApps",	# "EnableBackgroundApps",
+	"DisableLocationTracking",	# "EnableLocationTracking",
+	"DisableMapUpdates",		# "EnableMapUpdates",
+	"DisableFeedback",		# "EnableFeedback",
 	"DisableTailoredExperiences",	# "EnableTailoredExperiences",
-	"DisableAdvertisingID",			# "EnableAdvertisingID",
-	"DisableCortana",				# "EnableCortana",
-	"DisableErrorReporting",		# "EnableErrorReporting",
-	"SetP2PUpdateLocal",			# "SetP2PUpdateInternet",
-	"DisableDiagTrack",				# "EnableDiagTrack",
-	"DisableWAPPush",				# "EnableWAPPush",
+	"DisableAdvertisingID",		# "EnableAdvertisingID",
+	"DisableCortana",		# "EnableCortana",
+	"DisableErrorReporting",	# "EnableErrorReporting",
+	"SetP2PUpdateLocal",		# "SetP2PUpdateInternet",
+	"DisableDiagTrack",		# "EnableDiagTrack",
+	"DisableWAPPush",		# "EnableWAPPush",
 
 	### Security Tweaks ###
-	"SetUACLow",					# "SetUACHigh",
+	"SetUACLow",			# "SetUACHigh",
 	"EnableSharingMappedDrives",	# "DisableSharingMappedDrives",
-	"EnableAdminShares",			# "DisableAdminShares",
-	"DisableSMB1",					# "EnableSMB1",
-	# "DisableSMBServer",			# "EnableSMBServer",
-	"DisableLLMNR",					# "EnableLLMNR",
-	"SetCurrentNetworkPrivate",		# "SetCurrentNetworkPublic",
+	"EnableAdminShares",		# "DisableAdminShares",
+	"DisableSMB1",			# "EnableSMB1",
+	# "DisableSMBServer",		# "EnableSMBServer",
+	"DisableLLMNR",			# "EnableLLMNR",
+	"SetCurrentNetworkPrivate",	# "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",	# "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",	# "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",		# "EnableCtrldFolderAccess",
-	# "DisableFirewall",			# "EnableFirewall",
-	"DisableDefender",				# "EnableDefender",
-	"DisableDefenderCloud",			# "EnableDefenderCloud",
-	"EnableF8BootMenu",				# "DisableF8BootMenu",
-	"SetDEPOptOut",					# "SetDEPOptIn",
-	"DisableCIMemoryIntegrity",		# "EnableCIMemoryIntegrity",
-	# "DisableScriptHost",			# "EnableScriptHost",
+	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
+	# "DisableFirewall",		# "EnableFirewall",
+	"DisableDefender",		# "EnableDefender",
+	"DisableDefenderCloud",		# "EnableDefenderCloud",
+	"EnableF8BootMenu",		# "DisableF8BootMenu",
+	"SetDEPOptOut",			# "SetDEPOptIn",
+	"DisableCIMemoryIntegrity",	# "EnableCIMemoryIntegrity",
+	# "DisableScriptHost",		# "EnableScriptHost",
 	# "EnableDotNetStrongCrypto",	# "DisableDotNetStrongCrypto",
 	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"    
 
 	### Service Tweaks ###
-	"DisableUpdateMSRT",			# "EnableUpdateMSRT",
-	"DisableUpdateDriver",			# "EnableUpdateDriver",
-	"DisableUpdateRestart",			# "EnableUpdateRestart",
-	"DisableHomeGroups",			# "EnableHomeGroups",
-	"DisableSharedExperiences",		# "EnableSharedExperiences",
-	"DisableRemoteAssistance",		# "EnableRemoteAssistance",
-	"EnableRemoteDesktop",			# "DisableRemoteDesktop",
-	"DisableAutoplay",				# "EnableAutoplay",
-	"DisableAutorun",				# "EnableAutorun",
-	"DisableStorageSense",			# "EnableStorageSense",
-	"DisableDefragmentation",		# "EnableDefragmentation",
-	"DisableSuperfetch",			# "EnableSuperfetch",
-	"DisableIndexing",				# "EnableIndexing",
-	"SetBIOSTimeUTC",				# "SetBIOSTimeLocal",
-	"DisableHibernation",			# "EnableHibernation",
-	"EnableSleepButton",			# "DisableSleepButton",         
-	"DisableSleepTimeout",			# "EnableSleepTimeout",
-	"DisableFastStartup",			# "EnableFastStartup",
+	"DisableUpdateMSRT",		# "EnableUpdateMSRT",
+	"DisableUpdateDriver",		# "EnableUpdateDriver",
+	"DisableUpdateRestart",		# "EnableUpdateRestart",
+	"DisableHomeGroups",		# "EnableHomeGroups",
+	"DisableSharedExperiences",	# "EnableSharedExperiences",
+	"DisableRemoteAssistance",	# "EnableRemoteAssistance",
+	"DisableRemoteDesktop",		# "EnableRemoteDesktop",
+	"DisableAutoplay",		# "EnableAutoplay",
+	"DisableAutorun",		# "EnableAutorun",
+	"DisableStorageSense",		# "EnableStorageSense",
+	"DisableDefragmentation",	# "EnableDefragmentation",
+	"DisableSuperfetch",		# "EnableSuperfetch",
+	"DisableIndexing",		# "EnableIndexing",
+	"SetBIOSTimeUTC",		# "SetBIOSTimeLocal",
+	"DisableHibernation",		# "EnableHibernation",
+	"EnableSleepButton",		# "DisableSleepButton",
+	"DisableSleepTimeout",		# "EnableSleepTimeout",
+	"DisableFastStartup",		# "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",			# "EnableActionCenter",
-	"DisableLockScreen",			# "EnableLockScreen",
-	"DisableLockScreenRS1",			# "EnableLockScreenRS1",
+	"DisableActionCenter",		# "EnableActionCenter",
+	"DisableLockScreen",		# "EnableLockScreen",
+	"DisableLockScreenRS1",		# "EnableLockScreenRS1",
+	"DisableStickyKeys",		# "EnableStickyKeys",
+	"ShowTaskManagerDetails",	# "HideTaskManagerDetails",
+	"ShowFileOperationsDetails",	# "HideFileOperationsDetails",
+	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
+	"HideTaskbarSearch",		# "ShowTaskbarSearchIcon",	# "ShowTaskbarSearchBox",
+	"HideTaskView",			# "ShowTaskView",
+	"ShowSmallTaskbarIcons",	# "ShowLargeTaskbarIcons",
+	"SetTaskbarCombineWhenFull",	# "SetTaskbarCombineNever",	# "SetTaskbarCombineAlways",
+	# "HideTaskbarPeopleIcon",	# "ShowTaskbarPeopleIcon",
+	"ShowTrayIcons",		# "HideTrayIcons",
+	"DisableSearchAppInStore",	# "EnableSearchAppInStore",
+	"DisableNewAppPrompt",		# "EnableNewAppPrompt",
+	"SetControlPanelSmallIcons",	# "SetControlPanelLargeIcons",	# "SetControlPanelCategories",
+	"EnableNumlock",		# "DisableNumlock",
+	"EnableDarkMode",		# "DisableDarkMode",
+	"Stop-EdgePDF",
 	# "HideNetworkFromLockScreen",	# "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",	# "ShowShutdownOnLockScreen",
-	"DisableStickyKeys",			# "EnableStickyKeys",
-	"ShowTaskManagerDetails",		# "HideTaskManagerDetails",
-	"ShowFileOperationsDetails",	# "HideFileOperationsDetails",
-	"DisableFileDeleteConfirm",		# "EnableFileDeleteConfirm",    
-	# "HideTaskbarSearch",
-	"ShowTaskbarSearchIcon",		# "ShowTaskbarSearchBox",
-	"HideTaskView",					# "ShowTaskView",
-	"ShowSmallTaskbarIcons",		# "ShowLargeTaskbarIcons",
-	# "SetTaskbarCombineWhenFull",	 "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
-	# "HideTaskbarPeopleIcon",		# "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",				# "HideTrayIcons",
-	"DisableSearchAppInStore",		# "EnableSearchAppInStore",
-	"DisableNewAppPrompt",			# "EnableNewAppPrompt",
-	"SetControlPanelSmallIcons",	# "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
-	# "SetVisualFXPerformance",		# "SetVisualFXAppearance",
-	# "AddENKeyboard",				# "RemoveENKeyboard",
-	"EnableNumlock",				# "DisableNumlock",
-	"EnableDarkMode",				# "DisableDarkMode",
-	"Stop-EdgePDF",
+	# "SetVisualFXPerformance",	# "SetVisualFXAppearance",
+	# "AddENKeyboard",		# "RemoveENKeyboard",
 
 	### Explorer UI Tweaks ###
-	"ShowKnownExtensions",			# "HideKnownExtensions",
-	"ShowHiddenFiles",				# "HideHiddenFiles",
-	"HideSyncNotifications",		# "ShowSyncNotifications",
-	# "HideRecentShortcuts",		# "ShowRecentShortcuts",
-	"SetExplorerThisPC",			# "SetExplorerQuickAccess",
-	"HideThisPCFromDesktop",		# "ShowThisPCOnDesktop",
-	"ShowUserFolderOnDesktop",		# "HideUserFolderFromDesktop",
-	# "HideDesktopFromThisPC",		# "ShowDesktopInThisPC",
+	 "ShowKnownExtensions",		# "HideKnownExtensions",
+	 "ShowHiddenFiles",		# "HideHiddenFiles",
+	 "HideSyncNotifications",	# "ShowSyncNotifications",
+	# "HideRecentShortcuts",	# "ShowRecentShortcuts",
+	 "SetExplorerThisPC",		# "SetExplorerQuickAccess",
+	 "ShowThisPCOnDesktop",		# "HideThisPCFromDesktop",
+	 "ShowUserFolderOnDesktop",	# "HideUserFolderFromDesktop",
+	# "HideDesktopFromThisPC",	# "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",	# "ShowDesktopInExplorer",
 	# "HideDocumentsFromThisPC",	# "ShowDocumentsInThisPC",
 	# "HideDocumentsFromExplorer",	# "ShowDocumentsInExplorer",
-	# "HideDownloadsFromThisPC",	 "ShowDownloadsInThisPC",
-	# "HideDownloadsFromExplorer",	 "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",			# "ShowMusicInThisPC",
-	"HideMusicFromExplorer",		# "ShowMusicInExplorer",
-	# "HidePicturesFromThisPC",		# "ShowPicturesInThisPC",
-	# "HidePicturesFromExplorer",	# "ShowPicturesInExplorer",
-	"HideVideosFromThisPC",			# "ShowVideosInThisPC",
-	"HideVideosFromExplorer",		# "ShowVideosInExplorer",
-	"Hide3DObjectsFromThisPC",		# "Show3DObjectsInThisPC",
-	"Hide3DObjectsFromExplorer",	# "Show3DObjectsInExplorer",
-	# "DisableThumbnails",			# "EnableThumbnails",
-	# "DisableThumbsDB",			# "EnableThumbsDB",
+	 "ShowDownloadsInThisPC",	# "HideDownloadsFromThisPC",
+	 "ShowDownloadsInExplorer",	# "HideDownloadsFromExplorer",
+	 "HideMusicFromThisPC",		# "ShowMusicInThisPC",
+	 "HideMusicFromExplorer",	# "ShowMusicInExplorer",
+	 "HidePicturesFromThisPC",	# "ShowPicturesInThisPC",
+	 "HidePicturesFromExplorer",	# "ShowPicturesInExplorer",
+	 "HideVideosFromThisPC",	# "ShowVideosInThisPC",
+	 "HideVideosFromExplorer",	# "ShowVideosInExplorer",
+	 "Hide3DObjectsFromThisPC",	# "Show3DObjectsInThisPC",
+	 "Hide3DObjectsFromExplorer",	# "Show3DObjectsInExplorer",
+	# "DisableThumbnails",		# "EnableThumbnails",
+	# "DisableThumbsDB",		# "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",				# "EnableOneDrive",
-	"UninstallOneDrive",			# "InstallOneDrive",
-	"UninstallMsftBloat",			# "InstallMsftBloat",
-	"UninstallThirdPartyBloat",		# "InstallThirdPartyBloat",
-	# "UninstallWindowsStore",		# "InstallWindowsStore",
-	# "DisableXboxFeatures",		# "EnableXboxFeatures",
-	"DisableAdobeFlash",			# "EnableAdobeFlash",
-	"InstallMediaPlayer",			# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",	# "InstallInternetExplorer",
-	"UninstallWorkFolders",			# "InstallWorkFolders",
-	"InstallLinuxSubsystem",		# "UninstallLinuxSubsystem",
-	"InstallHyperV",				# "UninstallHyperV",
-	"SetPhotoViewerAssociation",	# "UnsetPhotoViewerAssociation",
-	"AddPhotoViewerOpenWith",		# "RemovePhotoViewerOpenWith",
-	"InstallPDFPrinter",			# "UninstallPDFPrinter",
-	# "UninstallXPSPrinter",		# "InstallXPSPrinter",
-	# "RemoveFaxPrinter",			# "AddFaxPrinter",
+	 "DisableOneDrive",		# "EnableOneDrive",
+	 "UninstallOneDrive",		# "InstallOneDrive",
+	 "UninstallMsftBloat",		# "InstallMsftBloat",
+	 "UninstallThirdPartyBloat",	# "InstallThirdPartyBloat",
+	 "EnableXboxFeatures",		# "DisableXboxFeatures",
+	 "DisableAdobeFlash",		# "EnableAdobeFlash",
+	 "InstallMediaPlayer",		# "UninstallMediaPlayer",
+	 "UninstallInternetExplorer",	# "InstallInternetExplorer",
+	 "UninstallWorkFolders",	# "InstallWorkFolders",
+	 "InstallLinuxSubsystem",	# "UninstallLinuxSubsystem",
+	 "InstallHyperV",		# "UninstallHyperV",
+	 "SetPhotoViewerAssociation",	# "UnsetPhotoViewerAssociation",
+	 "AddPhotoViewerOpenWith",	# "RemovePhotoViewerOpenWith",
+	 "InstallPDFPrinter",		# "UninstallPDFPrinter",
+	# "UninstallXPSPrinter",	# "InstallXPSPrinter",
+	# "RemoveFaxPrinter",		# "AddFaxPrinter",
+	# "UninstallWindowsStore",	# "InstallWindowsStore",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",	# "ShowServerManagerOnLogin",
@@ -201,9 +224,19 @@ Function InstallTitusProgs {
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-Function InstallAdobe {
-	Write-Output "Installing Adobe Acrobat Reader"
-	choco install adobereader -y
+Function InstallChocoGUI {
+	Write-Output "Installing Chocolatey GUI"
+	choco install chocolateygui -y
+}
+
+Function InstallDotNet3.5 {
+	Write-Output "Installing MS .NET 3.5"
+	choco install dotnet3.5 -y
+}
+
+Function InstallMSVCR {
+	Write-Output "Installing MS Visual C+ 2015-19"
+	choco install vcredist140 -y
 }
 
 Function InstallJava {
@@ -216,14 +249,113 @@ Function Install7Zip {
 	choco install 7zip -y
 }
 
+Function InstallAdobeRR {
+	Write-Output "Installing Adobe Acrobat Reader"
+	choco install adobereader -y
+}
+
+Function InstallChrome {
+	Write-Output "Installing Google Chrome"
+	choco install googlechrome -y
+}
+
+Function InstallFirefox {
+	Write-Output "Installing Firefox"
+	choco install firefox -y
+}
+
+Function InstallGimp {
+	Write-Output "Installing Gimp"
+	choco install gimp -y
+}
+
+Function InstallInkscape {
+	Write-Output "Installing Inkscape"
+	choco install inkscape -y
+}
+
+Function InstallAtom {
+	Write-Output "Installing Atom"
+	choco install atom -y
+}
+
+Function InstallLBO-fresh {
+	Write-Output "Installing Libre Office fresh"
+	choco install libreoffice-fresh -y
+}
+
 Function InstallNotepadplusplus {
 	Write-Output "Installing Notepad++"
 	choco install notepadplusplus -y
 }
 
+Function InstallSublime {
+	Write-Output "Installing Sublime Text"
+	choco install sublimetext3 -y
+}
+
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallVLC {
+	Write-Output "Installing VLC"
+	choco install vlc -y
+}
+
+Function InstallQdir {
+	Write-Output "Installing Q-dir"
+	choco install qdir -y
+}
+
+Function InstallTeamviewer {
+	Write-Output "Installing Teamviewer"
+	choco install teamviewer -y
+}
+
+Function InstallDOSBox {
+	Write-Output "Installing DOSBox"
+	choco install dosbox -y
+}
+
+Function InstallEpic {
+	Write-Output "Installing Epic Games Launcher"
+	choco install epicgameslauncher -y
+}
+
+Function InstallGOG {
+	Write-Output "Installing Gog Galaxy 2"
+	choco install goggalaxy -y
+}
+
+Function InstallGZDoom {
+	Write-Output "Installing GZDoom"
+	choco install gzdoom -y
+}
+
+Function InstallBRDoom {
+	Write-Output "Installing Brutal Doom"
+	choco install brutaldoom -y
+}
+Function InstallDoomskr {
+	Write-Output "Installing Doomseeker"
+	choco install doomseeker -y
+}
+
+Function InstallLaunchbox {
+	Write-Output "Installing Launchbox"
+	choco install launchbox -y
+}
+
+Function InstallSteam {
+	Write-Output "Installing Steam"
+	choco install steam -y
+}
+
+Function InstallUplay {
+	Write-Output "Installing Uplay"
+	choco install uplay -y
 }
 
 ##########
@@ -2453,7 +2585,7 @@ Function RequireAdmin {
 
 # Wait for key press
 Function WaitForKey {
-	Write-Output "Press any key to continue..."
+	Write-Output "Press any key to continue & restart"
 	[Console]::ReadKey($true) | Out-Null
 }
 
@@ -2563,11 +2695,11 @@ Function DebloatAll {
         "*Dolby*"
              
         #Optional: Typically not removed but you can if you need to for some reason
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
+        "*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
-        #"*Microsoft.MicrosoftStickyNotes*"
+        "*Microsoft.MicrosoftStickyNotes*"
         #"*Microsoft.Windows.Photos*"
         #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
