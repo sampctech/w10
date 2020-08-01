@@ -4,13 +4,13 @@
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 #
-#    If you're a power user looking to tweak your machinea, or doing larger roll-out.. 
+#    If you're a power user looking to tweak your machinea, or doing larger roll-out..
 #    Use the @Disassembler0 script instead. It'll probably be more up-to-date than mine:
 #    https://github.com/Disassembler0/Win10-Initial-Setup-Script
-# 
+#
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
-#	Addition: One command to rule them all, One command to find it, and One command to Run it! 
+#	Addition: One command to rule them all, One command to find it, and One command to Run it!
 #
 #     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
 #
@@ -20,7 +20,6 @@
 #	- One Command to launch and run
 #	- Chocolatey Install
 #	- O&O Shutup10 CFG and Run
-#	- Google Chrome
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #
@@ -30,175 +29,269 @@ $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
 
-  ### External Program Setup
+	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-  "InstallChocoGUI",
-  "InstallDotNet3.5",
-	"InstallMSVCR",
+	"InstallChocoGUI",
+	"InstallChocoAuGUI",
+	"InstallChocoExp",
+	"InstallChocoPU",
+	"InstallChocoPICE",
+	"InstallDotNet35",
+	"InstallDotNETVer",
+	"InstallMSCRAV",
 	"InstallJava",
-  "Install7Zip",
-  #"InstallAdobeRR",
+	"InstallLogigame",
+	#"Installnvidia",
+	"InstallBrave",
 	"InstallChrome",
+	"InstallGDrive",
 	"InstallFirefox",
+	"InstallFFABP",
+	"InstallHTtrack",
+	"InstallOpera",
+	"InstallSmartFTP",
+	"InstallTeamviewer",
+	"InstallVivaldi",
+	"InstallYTdl",
+	"InstallYTdlGUI",
+	"Install7TT",
+	"Install7Zip",
+	"InstallAIDA64EX",
+	"InstallAIDA64EN",
+	"InstallAIDA64BZ",
+	"InstallBitwarden",
+	"InstallClamwin",
+	"InstallClamsentinel",
+	"InstallCPUZ",
+	"Installdeluge",
+	"InstallDVRFUSN",
+	"InstallEtcher",
+	"InstallGlaryFree",
+	"InstallHandbrake",
+	"Installhwinfo",
+	"InstallMakeMKV",
+	"InstallMeld",
+	"InstallMP3tag",
+	"InstallOldCalc",
+	"InstallPeerblock",
+	"InstallPowerISO",
+	"InstallMSPowerToys",
+	"InstallQdir",
+	"InstallResHack",
+	"InstallRocketdock",
+	"InstallRufus",
+	"InstallSoulSeek",
+	"InstallSpeedfan",
+	"Installstartisback",
+	"Installstartisbackplus",
+	"InstallTuxGuitar",
+	"InstallUSP",
+	"InstallWinAreoT",
+	"Installwpd",
+	"InstallAmazonMusic",
+	"Installasio4all",
+	"InstallAudacity",
+	"InstallAudacityLame",
 	"InstallGimp",
-	"InstallInkscape",
-	"InstallAtom",
-	"InstallLBO-fresh",
-	"InstallNotepadplusplus",
-  "InstallSublime",
-	#"InstallMediaPlayerClassic",
+	"InstallGPlayMM",
+	"Installjbs",
+	"Installinkscape",
+	"InstallLame"
+	"InstallLameFE",
+	"InstallMediaPlayerClassic",
+	"Installmusescore",
+	"Installobsstudio",
+	"InstallWinamp",
 	"InstallVLC",
-  "InstallQdir",
-  "InstallTeamviewer",
-  "InstallDOSBox",
-  "InstallEpic",
-  "InstallGOG",
-  "InstallGZDoom",
-  "InstallBRDoom",
-  "InstallDoomskr",  
-  "InstallLaunchbox",
-  "InstallSteam",
-  "InstallUplay",
+	"InstallAdobe",
+	"InstallAtom",
+	"InstallLOFFFR",
+	"InstallNotepadplusplus",
+	"InstallNPPPlugMan",
+	"InstallSublimeText",
+	"InstallArchLinux"
+
+  ### Game Stuff
+	"Installbattlenet",
+	"InstallDOSBox",
+	"Installdbgl",
+	"InstallEpicGames",
+	"Installgamesavemanager",
+	"Installgoggalaxy",
+	"Installnmm",
+	"InstallORCT2",
+	"InstallOrigin",
+	"InstallPlaynite",
+	"InstallSNES9x",
+	"InstallSteam",
+	"InstallUplay",
+
+	### DOOM Stuff includin Brutal DOOM & Maps
+	"InstallGZDoom",
+	"InstallFreeDoom",
+	"Installdoomd64rtr",
+	"InstallQCDE",
+	"InstallDoomseeker",
+	"InstallSlade",
+	"InstallBrutalDOOM",
+	"InstallBDMapSigil",
+	"InstallDOOMMapdtwid",
+	"InstallBDD2reload",
+	"InstallBDDTWID",
+	"InstallBDEPIC2",
+	"InstallBDGD",
+	"InstallBDHB",
+	"InstallBDKama",
+	"InstallBDscythe2",
+	"InstallD1MSigil",
+	"InstallD2btsxel",
+	"InstallD2MD2RL",
+	"InstallD2MEpic2",
+	"InstallD2MGD",
+	"InstallD2MNova3",
+	"InstallD2MScyte2",
+	"InstallD2MScythe2",
 
 	### Windows Apps
 	"DebloatAll",
 
 	### Privacy Tweaks ###
-	"DisableTelemetry",		# "EnableTelemetry",
-	"DisableWiFiSense",		# "EnableWiFiSense",
-	"DisableSmartScreen",		# "EnableSmartScreen",
-	"DisableWebSearch",		# "EnableWebSearch",
-	"DisableAppSuggestions",	# "EnableAppSuggestions",
-	"DisableActivityHistory",	# "EnableActivityHistory",
-	"DisableBackgroundApps",	# "EnableBackgroundApps",
-	"DisableLocationTracking",	# "EnableLocationTracking",
-	"DisableMapUpdates",		# "EnableMapUpdates",
-	"DisableFeedback",		# "EnableFeedback",
+	"DisableTelemetry",				# "EnableTelemetry",
+	"DisableWiFiSense",				# "EnableWiFiSense",
+	"DisableSmartScreen",			# "EnableSmartScreen",
+	"DisableWebSearch",				# "EnableWebSearch",
+	"DisableAppSuggestions",		# "EnableAppSuggestions",
+	"DisableActivityHistory",		# "EnableActivityHistory",
+	"DisableBackgroundApps",		# "EnableBackgroundApps",
+	"DisableLocationTracking",		# "EnableLocationTracking",
+	"DisableMapUpdates",			# "EnableMapUpdates",
+	"DisableFeedback",				# "EnableFeedback",
 	"DisableTailoredExperiences",	# "EnableTailoredExperiences",
-	"DisableAdvertisingID",		# "EnableAdvertisingID",
-	"DisableCortana",		# "EnableCortana",
-	"DisableErrorReporting",	# "EnableErrorReporting",
-	"SetP2PUpdateLocal",		# "SetP2PUpdateInternet",
-	"DisableDiagTrack",		# "EnableDiagTrack",
-	"DisableWAPPush",		# "EnableWAPPush",
+	"DisableAdvertisingID",			# "EnableAdvertisingID",
+	"DisableCortana",				# "EnableCortana",
+	"DisableErrorReporting",		# "EnableErrorReporting",
+	"SetP2PUpdateLocal",			# "SetP2PUpdateInternet",
+	"DisableDiagTrack",				# "EnableDiagTrack",
+	"DisableWAPPush",				# "EnableWAPPush",
 
 	### Security Tweaks ###
-	"SetUACLow",			# "SetUACHigh",
+	"SetUACLow",					# "SetUACHigh",
 	"EnableSharingMappedDrives",	# "DisableSharingMappedDrives",
-	"EnableAdminShares",		# "DisableAdminShares",
-	"DisableSMB1",			# "EnableSMB1",
-	# "DisableSMBServer",		# "EnableSMBServer",
-	"DisableLLMNR",			# "EnableLLMNR",
-	"SetCurrentNetworkPrivate",	# "SetCurrentNetworkPublic",
+	"EnableAdminShares",			# "DisableAdminShares",
+	"DisableSMB1",					# "EnableSMB1",
+	# "DisableSMBServer",			# "EnableSMBServer",
+	# "DisableLLMNR",				# "EnableLLMNR",
+	"SetCurrentNetworkPrivate",		# "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",	# "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",	# "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
-	# "DisableFirewall",		# "EnableFirewall",
-	"DisableDefender",		# "EnableDefender",
-	"DisableDefenderCloud",		# "EnableDefenderCloud",
-	"EnableF8BootMenu",		# "DisableF8BootMenu",
-	"SetDEPOptOut",			# "SetDEPOptIn",
-	"DisableCIMemoryIntegrity",	# "EnableCIMemoryIntegrity",
-	# "DisableScriptHost",		# "EnableScriptHost",
-	# "EnableDotNetStrongCrypto",	# "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"    
+	"DisableCtrldFolderAccess",		# "EnableCtrldFolderAccess",
+	# "DisableFirewall",			# "EnableFirewall",
+	"DisableDefender",				# "EnableDefender",
+	"DisableDefenderCloud",			# "EnableDefenderCloud",
+	"EnableF8BootMenu",				# "DisableF8BootMenu",
+	"SetDEPOptOut",					# "SetDEPOptIn",
+	# "EnableCIMemoryIntegrity",	# "DisableCIMemoryIntegrity",
+	#"DisableScriptHost",			# "EnableScriptHost",
+	#"EnableDotNetStrongCrypto",	# "DisableDotNetStrongCrypto",
+	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"
 
 	### Service Tweaks ###
-	"DisableUpdateMSRT",		# "EnableUpdateMSRT",
-	"DisableUpdateDriver",		# "EnableUpdateDriver",
-	"DisableUpdateRestart",		# "EnableUpdateRestart",
-	"DisableHomeGroups",		# "EnableHomeGroups",
-	"DisableSharedExperiences",	# "EnableSharedExperiences",
-	"DisableRemoteAssistance",	# "EnableRemoteAssistance",
-	"DisableRemoteDesktop",		# "EnableRemoteDesktop",
-	"DisableAutoplay",		# "EnableAutoplay",
-	"DisableAutorun",		# "EnableAutorun",
-	"DisableStorageSense",		# "EnableStorageSense",
-	"DisableDefragmentation",	# "EnableDefragmentation",
-	"DisableSuperfetch",		# "EnableSuperfetch",
-	"DisableIndexing",		# "EnableIndexing",
-	"SetBIOSTimeUTC",		# "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",
-	"EnableSleepButton",		# "DisableSleepButton",
-	"DisableSleepTimeout",		# "EnableSleepTimeout",
-	"DisableFastStartup",		# "EnableFastStartup",
+	"DisableUpdateMSRT",			# "EnableUpdateMSRT",
+	"DisableUpdateDriver",			# "EnableUpdateDriver",
+	"DisableUpdateRestart",			# "EnableUpdateRestart",
+	"DisableHomeGroups",			# "EnableHomeGroups",
+	"DisableSharedExperiences",		# "EnableSharedExperiences",
+	"DisableRemoteAssistance",		# "EnableRemoteAssistance",
+	"DisableRemoteDesktop",			# "EnableRemoteDesktop",
+	"DisableAutoplay",				# "EnableAutoplay",
+	"DisableAutorun",               # "EnableAutorun",
+	"DisableStorageSense",			# "EnableStorageSense",
+	"DisableDefragmentation",		# "EnableDefragmentation",
+	"DisableSuperfetch",			# "EnableSuperfetch",
+	"DisableIndexing",				# "EnableIndexing",
+	"SetBIOSTimeUTC",				# "SetBIOSTimeLocal",
+	"DisableHibernation",			# "EnableHibernation",
+	"DisableSleepButton",			# "EnableSleepButton",
+	"DisableSleepTimeout",			# "EnableSleepTimeout",
+	"DisableFastStartup",			# "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",		# "EnableActionCenter",
-	"DisableLockScreen",		# "EnableLockScreen",
-	"DisableLockScreenRS1",		# "EnableLockScreenRS1",
-	"DisableStickyKeys",		# "EnableStickyKeys",
-	"ShowTaskManagerDetails",	# "HideTaskManagerDetails",
-	"ShowFileOperationsDetails",	# "HideFileOperationsDetails",
-	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
-	"HideTaskbarSearch",		# "ShowTaskbarSearchIcon",	# "ShowTaskbarSearchBox",
-	"HideTaskView",			# "ShowTaskView",
-	"ShowSmallTaskbarIcons",	# "ShowLargeTaskbarIcons",
-	"SetTaskbarCombineWhenFull",	# "SetTaskbarCombineNever",	# "SetTaskbarCombineAlways",
-	# "HideTaskbarPeopleIcon",	# "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",		# "HideTrayIcons",
-	"DisableSearchAppInStore",	# "EnableSearchAppInStore",
-	"DisableNewAppPrompt",		# "EnableNewAppPrompt",
-	"SetControlPanelSmallIcons",	# "SetControlPanelLargeIcons",	# "SetControlPanelCategories",
-	"EnableNumlock",		# "DisableNumlock",
-	"EnableDarkMode",		# "DisableDarkMode",
-	"Stop-EdgePDF",
+	"DisableActionCenter",			# "EnableActionCenter",
+	"DisableLockScreen",			# "EnableLockScreen",
+	"DisableLockScreenRS1",			# "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",	# "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",	# "ShowShutdownOnLockScreen",
-	# "SetVisualFXPerformance",	# "SetVisualFXAppearance",
-	# "AddENKeyboard",		# "RemoveENKeyboard",
+	"DisableStickyKeys",			# "EnableStickyKeys",
+	"ShowTaskManagerDetails"		# "HideTaskManagerDetails",
+	"ShowFileOperationsDetails",	# "HideFileOperationsDetails",
+	"DisableFileDeleteConfirm",		# "EnableFileDeleteConfirm",
+	"HideTaskbarSearch",
+	"ShowTaskbarSearchIcon",		# "ShowTaskbarSearchBox",
+	"HideTaskView",					# "ShowTaskView",
+	"ShowSmallTaskbarIcons",		# "ShowLargeTaskbarIcons",
+	"SetTaskbarCombineWhenFull",	# "SetTaskbarCombineNever",		# "SetTaskbarCombineAlways",
+	"HideTaskbarPeopleIcon",		# "ShowTaskbarPeopleIcon",
+	"ShowTrayIcons",				# "HideTrayIcons",
+	"DisableSearchAppInStore",		# "EnableSearchAppInStore",
+	"DisableNewAppPrompt",			# "EnableNewAppPrompt",
+	 "SetControlPanelSmallIcons",	# "SetControlPanelLargeIcons",	# "SetControlPanelCategories",
+	# "SetVisualFXPerformance",		# "SetVisualFXAppearance",
+	# "AddENKeyboard",				# "RemoveENKeyboard",
+	"EnableNumlock",				# "DisableNumlock",
+	"EnableDarkMode",				# "DisableDarkMode",
+	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
-	 "ShowKnownExtensions",		# "HideKnownExtensions",
-	 "ShowHiddenFiles",		# "HideHiddenFiles",
-	 "HideSyncNotifications",	# "ShowSyncNotifications",
-	# "HideRecentShortcuts",	# "ShowRecentShortcuts",
-	 "SetExplorerThisPC",		# "SetExplorerQuickAccess",
-	 "ShowThisPCOnDesktop",		# "HideThisPCFromDesktop",
-	 "ShowUserFolderOnDesktop",	# "HideUserFolderFromDesktop",
-	# "HideDesktopFromThisPC",	# "ShowDesktopInThisPC",
-	# "HideDesktopFromExplorer",	# "ShowDesktopInExplorer",
-	# "HideDocumentsFromThisPC",	# "ShowDocumentsInThisPC",
-	# "HideDocumentsFromExplorer",	# "ShowDocumentsInExplorer",
-	 "ShowDownloadsInThisPC",	# "HideDownloadsFromThisPC",
-	 "ShowDownloadsInExplorer",	# "HideDownloadsFromExplorer",
-	 "HideMusicFromThisPC",		# "ShowMusicInThisPC",
-	 "HideMusicFromExplorer",	# "ShowMusicInExplorer",
-	 "HidePicturesFromThisPC",	# "ShowPicturesInThisPC",
+	"ShowKnownExtensions",			# "HideKnownExtensions",
+	"ShowHiddenFiles",				# "HideHiddenFiles",
+	"HideSyncNotifications"			# "ShowSyncNotifications",
+	"ShowRecentShortcuts",			# "HideRecentShortcuts",
+	"SetExplorerThisPC",			# "SetExplorerQuickAccess",
+	"ShowThisPCOnDesktop",			# "HideThisPCFromDesktop",
+	 "ShowUserFolderOnDesktop",		# "HideUserFolderFromDesktop",
+	"ShowDesktopInThisPC",			# "HideDesktopFromThisPC",
+	"ShowDesktopInExplorer",		# "HideDesktopFromExplorer",
+	 "HideDocumentsFromThisPC",		# "ShowDocumentsInThisPC",
+	 "HideDocumentsFromExplorer",	# "ShowDocumentsInExplorer",
+	"ShowDownloadsInThisPC",		# "HideDownloadsFromThisPC",
+	"ShowDownloadsInExplorer",		# "HideDownloadsFromExplorer",
+	"HideMusicFromThisPC",			# "ShowMusicInThisPC",
+	"HideMusicFromExplorer",		# "ShowMusicInExplorer",
+	 "HidePicturesFromThisPC",		# "ShowPicturesInThisPC",
 	 "HidePicturesFromExplorer",	# "ShowPicturesInExplorer",
-	 "HideVideosFromThisPC",	# "ShowVideosInThisPC",
-	 "HideVideosFromExplorer",	# "ShowVideosInExplorer",
-	 "Hide3DObjectsFromThisPC",	# "Show3DObjectsInThisPC",
-	 "Hide3DObjectsFromExplorer",	# "Show3DObjectsInExplorer",
-	# "DisableThumbnails",		# "EnableThumbnails",
-	# "DisableThumbsDB",		# "EnableThumbsDB",
+	"HideVideosFromThisPC",			# "ShowVideosInThisPC",
+	"HideVideosFromExplorer",		# "ShowVideosInExplorer",
+	"Hide3DObjectsFromThisPC",		# "Show3DObjectsInThisPC",
+	"Hide3DObjectsFromExplorer",	# "Show3DObjectsInExplorer",
+	# "DisableThumbnails",			# "EnableThumbnails",
+	"DisableThumbsDB",				# "EnableThumbsDB",
 
 	### Application Tweaks ###
-	 "DisableOneDrive",		# "EnableOneDrive",
-	 "UninstallOneDrive",		# "InstallOneDrive",
-	 "UninstallMsftBloat",		# "InstallMsftBloat",
-	 "UninstallThirdPartyBloat",	# "InstallThirdPartyBloat",
-	 "EnableXboxFeatures",		# "DisableXboxFeatures",
-	 "DisableAdobeFlash",		# "EnableAdobeFlash",
-	 "InstallMediaPlayer",		# "UninstallMediaPlayer",
-	 "UninstallInternetExplorer",	# "InstallInternetExplorer",
-	 "UninstallWorkFolders",	# "InstallWorkFolders",
-	 "InstallLinuxSubsystem",	# "UninstallLinuxSubsystem",
-	 "InstallHyperV",		# "UninstallHyperV",
-	 "SetPhotoViewerAssociation",	# "UnsetPhotoViewerAssociation",
-	 "AddPhotoViewerOpenWith",	# "RemovePhotoViewerOpenWith",
-	 "InstallPDFPrinter",		# "UninstallPDFPrinter",
-	# "UninstallXPSPrinter",	# "InstallXPSPrinter",
-	# "RemoveFaxPrinter",		# "AddFaxPrinter",
-	# "UninstallWindowsStore",	# "InstallWindowsStore",
+	"DisableOneDrive",				# "EnableOneDrive",
+	"UninstallOneDrive",			# "InstallOneDrive",
+	"UninstallMsftBloat",			# "InstallMsftBloat",
+	"UninstallThirdPartyBloat",		# "InstallThirdPartyBloat",
+	# "UninstallWindowsStore",		# "InstallWindowsStore",
+	"EnableXboxFeatures",			# "DisableXboxFeatures",
+	"DisableAdobeFlash",			# "EnableAdobeFlash",
+	"InstallMediaPlayer",			# "UninstallMediaPlayer",
+	"UninstallInternetExplorer",	# "InstallInternetExplorer",
+	"UninstallWorkFolders",			# "InstallWorkFolders",
+	"InstallLinuxSubsystem",		# "UninstallLinuxSubsystem",
+	"InstallHyperV",				# "UninstallHyperV",
+	"SetPhotoViewerAssociation",	# "UnsetPhotoViewerAssociation",
+	"AddPhotoViewerOpenWith",		# "RemovePhotoViewerOpenWith",
+	"InstallPDFPrinter",			# "UninstallPDFPrinter",
+	# "UninstallXPSPrinter",		# "InstallXPSPrinter",
+	# "RemoveFaxPrinter",			# "AddFaxPrinter",
 
 	### Server Specific Tweaks ###
-	# "HideServerManagerOnLogin",	# "ShowServerManagerOnLogin",
-	# "DisableShutdownTracker",		# "EnableShutdownTracker",
-	# "DisablePasswordPolicy",		# "EnablePasswordPolicy",
-	# "DisableCtrlAltDelLogin",		# "EnableCtrlAltDelLogin",
-	# "DisableIEEnhancedSecurity",	# "EnableIEEnhancedSecurity",
-	# "EnableAudio",				# "DisableAudio",
+	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
+	# "DisableShutdownTracker",     # "EnableShutdownTracker",
+	# "DisablePasswordPolicy",      # "EnablePasswordPolicy",
+	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
+	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
+	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
@@ -229,14 +322,39 @@ Function InstallChocoGUI {
 	choco install chocolateygui -y
 }
 
-Function InstallDotNet3.5 {
-	Write-Output "Installing MS .NET 3.5"
+Function InstallChocoAuGUI {
+	Write-Output "Installing Chocolatey AU GUI"
+	choco install au -y
+}
+
+Function InstallChocoExp {
+	Write-Output "Installing Chocolatey Explorer"
+	choco install chocolateyexplorer -y
+}
+
+Function InstallChocoPU {
+	Write-Output "Installing Chocolatey Package Updater"
+	choco install chocolateypackageupdater -y
+}
+
+Function InstallChocoPICE {
+	Write-Output "Installing Chocolatey-preinstaller-checks.extension"
+	choco install chocolatey-preinstaller-checks.extension -y
+}
+
+Function InstallDotNet35 {
+	Write-Output "Installing .NET 3.5"
 	choco install dotnet3.5 -y
 }
 
-Function InstallMSVCR {
-	Write-Output "Installing MS Visual C+ 2015-19"
-	choco install vcredist140 -y
+Function InstallDotNETVer {
+	Write-Output "Installing .NET Version Detector"
+	choco install dotnetversiondetector -y
+}
+
+Function InstallMSCRAV {
+	Write-Output "Installing Microsoft Visual C++ Runtime all verisons"
+	choco install vcredist-all -y
 }
 
 Function InstallJava {
@@ -244,14 +362,19 @@ Function InstallJava {
 	choco install jre8 -y
 }
 
-Function Install7Zip {
-	Write-Output "Installing 7-Zip"
-	choco install 7zip -y
+Function InstallLogigame {
+	Write-Output "Installing Logitech gaming"
+	choco install logitechgaming -y
 }
 
-Function InstallAdobeRR {
-	Write-Output "Installing Adobe Acrobat Reader"
-	choco install adobereader -y
+Function Installnvidia {
+	Write-Output "Installing nvidia-display-driver"
+	choco install nvidia-display-driver -y
+}
+
+Function InstallBrave {
+	Write-Output "Installing Brave"
+	choco install brave -y
 }
 
 Function InstallChrome {
@@ -259,9 +382,244 @@ Function InstallChrome {
 	choco install googlechrome -y
 }
 
+Function InstallGDrive {
+	Write-Output "Installing Google Drive"
+	choco install googledrive -y
+}
+
 Function InstallFirefox {
 	Write-Output "Installing Firefox"
 	choco install firefox -y
+}
+
+Function InstallFFABP {
+	Write-Output "Installing adblockplus-firefox"
+	choco install adblockplus-firefox -y
+}
+
+Function InstallHTtrack {
+	Write-Output "Installing HTtrack"
+	choco install httrack -y
+}
+
+Function InstallOpera {
+	Write-Output "Installing Opera"
+	choco install opera -y
+}
+
+Function InstallSmartFTP {
+	Write-Output "Installing SmartFTP"
+	choco install smartftp -y
+}
+
+Function InstallTeamviewer {
+	Write-Output "Installing Teamviewer"
+	choco install teamviewer -y
+}
+
+Function InstallVivaldi {
+	Write-Output "Installing Vivaldi"
+	choco install vivaldi -y
+}
+
+Function InstallYTdl {
+	Write-Output "Installing Youtube-dl"
+	choco install youtube-dl -y
+}
+
+Function InstallYTdlGUI {
+	Write-Output "Installing Youtube-dl GUI"
+	choco install youtube-dl-gui -y
+}
+
+Function Install7TT {
+	Write-Output "Installing "
+	choco install 7-taskbar-tweaker -y
+}
+
+Function Install7Zip {
+	Write-Output "Installing 7-Zip"
+	choco install 7zip -y
+}
+
+Function InstallAIDA64EX {
+	Write-Output "Installing AIDA64-extreme"
+	choco install aida64-extreme -y
+}
+
+Function InstallAIDA64EN {
+	Write-Output "Installing AIDA64-engineer"
+	choco install aida64-engineer -y
+}
+
+Function InstallAIDA64BZ {
+	Write-Output "Installing AIDA64-business"
+	choco install aida64-business -y
+}
+
+Function InstallBitwarden {
+	Write-Output "Installing Bitwarden"
+	choco install bitwarden -y
+}
+
+Function InstallClamwin {
+	Write-Output "Installing Clamwin"
+	choco install clamwin -y
+}
+
+Function InstallClamsentinel {
+	Write-Output "Installing Clamsentinel"
+	choco install clamsentinel -y
+}
+
+Function InstallCPUZ {
+	Write-Output "Installing CPU-Z"
+	choco install cpu-z -y
+}
+
+Function Installdeluge {
+	Write-Output "Installing deluge"
+	choco install deluge -y
+}
+
+Function InstallDVRFUSN {
+	Write-Output "Installing Driver Fusion"
+	choco install driverfusion -y
+}
+
+Function InstallEtcher {
+	Write-Output "Installing Etcher"
+	choco install etcher -y
+}
+
+Function InstallGlaryFree {
+	Write-Output "Installing Glary Utilities-free"
+	choco install glaryutilities-free -y
+}
+
+Function InstallHandbrake {
+	Write-Output "Installing Handbrake"
+	choco install handbrake -y
+}
+
+Function Installhwinfo {
+	Write-Output "Installing hwinfo"
+	choco install hwinfo -y
+}
+
+Function InstallMakeMKV {
+	Write-Output "Installing MakeMKV"
+	choco install makemkv -y
+}
+
+Function InstallMeld {
+	Write-Output "Installing Meld"
+	choco install meld -y
+}
+
+Function InstallMP3tag {
+	Write-Output "Installing MP3tag"
+	choco install mp3tag -y
+}
+
+Function InstallOldCalc {
+	Write-Output "Installing Windows 7 Calculator"
+	choco install oldcalc -y
+}
+
+Function InstallPeerblock {
+	Write-Output "Installing Peerblock"
+	choco install peerblock -y
+}
+
+Function InstallPowerISO {
+	Write-Output "Installing PowerISO"
+	choco install poweriso -y
+}
+
+Function InstallMSPowerToys {
+	Write-Output "Installing MS PowerToys"
+	choco install powertoys -y
+}
+
+Function InstallQdir {
+	Write-Output "Installing Q-dir"
+	choco install qdir -y
+}
+
+Function InstallResHack {
+	Write-Output "Installing ResHack"
+	choco install reshack -y
+}
+
+Function InstallRocketdock {
+	Write-Output "Installing Rocketdock"
+	choco install rocketdock -y
+}
+
+Function InstallRufus {
+	Write-Output "Installing Rufus"
+	choco install rufus -y
+}
+
+Function InstallSoulSeek {
+	Write-Output "Installing SoulSeek"
+	choco install soulseek -y
+}
+
+Function InstallSpeedfan {
+	Write-Output "Installing Speedfan"
+	choco install speedfan -y
+}
+
+Function Installstartisback {
+	Write-Output "Installing startisback"
+	choco install startisback -y
+}
+
+Function Installstartisbackplus {
+	Write-Output "Installing startisbackplus"
+	choco install startisbackplus -y
+}
+
+Function InstallTuxGuitar {
+	Write-Output "Installing TuxGuitar"
+	choco install tuxguitar -y
+}
+
+Function InstallUSP {
+	Write-Output "Installing ultimate-settings-panel"
+	choco install ultimate-settings-panel -y
+}
+
+Function InstallWinAreoT {
+	Write-Output "Installing winaero-tweaker"
+	choco install winaero-tweaker -y
+}
+
+Function Installwpd {
+	Write-Output "Installing WPD"
+	choco install wpd -y
+}
+
+Function InstallAmazonMusic {
+	Write-Output "Installing Amazon Music"
+	choco install amazon-music -y
+}
+
+Function Installasio4all {
+	Write-Output "Installing asio4all"
+	choco install asio4all -y
+}
+
+Function InstallAudacity {
+	Write-Output "Installing Audacity"
+	choco install audacity -y
+}
+
+Function InstallAudacityLame {
+	Write-Output "Installing "
+choco install audacity-lame	 -y
 }
 
 Function InstallGimp {
@@ -269,9 +627,59 @@ Function InstallGimp {
 	choco install gimp -y
 }
 
-Function InstallInkscape {
-	Write-Output "Installing Inkscape"
+Function InstallGPlayMM {
+	Write-Output "Installing Google Play Music Manager"
+	choco install google-play-music-manager -y
+}
+
+Function Installjbs {
+	Write-Output "Installing John's Background Switcher"
+	choco install jbs -y
+}
+
+Function Installinkscape {
+	Write-Output "Installing inkscape"
 	choco install inkscape -y
+}
+
+Function InstallLame {
+	Write-Output "Installing Lame"
+	choco install lame -y
+}
+
+Function InstallLameFE {
+	Write-Output "Installing Lame FE"
+	choco install lame-front-end -y
+}
+
+Function InstallMediaPlayerClassic {
+	Write-Output "Installing Media Player Classic (VLC Alternative)"
+	choco install mpc-hc -y
+}
+
+Function Installmusescore {
+	Write-Output "Installing musescore"
+	choco install musescore -y
+}
+
+Function Installobsstudio {
+	Write-Output "Installing obs-studio"
+	choco install obs-studio -y
+}
+
+Function InstallWinamp {
+	Write-Output "Installing Winamp"
+	choco install winamp -y
+}
+
+Function InstallVLC {
+	Write-Output "Installing "
+	choco install vlc -y
+}
+
+Function InstallAdobe {
+	Write-Output "Installing Adobe Acrobat Reader"
+	choco install adobereader -y
 }
 
 Function InstallAtom {
@@ -279,8 +687,8 @@ Function InstallAtom {
 	choco install atom -y
 }
 
-Function InstallLBO-fresh {
-	Write-Output "Installing Libre Office fresh"
+Function InstallLOFFFR {
+	Write-Output "Installing LibreOffice-fresh"
 	choco install libreoffice-fresh -y
 }
 
@@ -289,29 +697,24 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallSublime {
-	Write-Output "Installing Sublime Text"
+Function InstallNPPPlugMan {
+	Write-Output "Installing Notepad++ Plugin Manager"
+	choco install npppluginmanager -y
+}
+
+Function InstallSublimeText {
+	Write-Output "Installing Sublime Text 3"
 	choco install sublimetext3 -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function InstallArchLinux {
+	Write-Output "Installing "
+	choco install wsl-archlinux -y
 }
 
-Function InstallVLC {
-	Write-Output "Installing VLC"
-	choco install vlc -y
-}
-
-Function InstallQdir {
-	Write-Output "Installing Q-dir"
-	choco install qdir -y
-}
-
-Function InstallTeamviewer {
-	Write-Output "Installing Teamviewer"
-	choco install teamviewer -y
+Function Installbattlenet {
+	Write-Output "Installing battle.net"
+	choco install battle.net -y
 }
 
 Function InstallDOSBox {
@@ -319,14 +722,59 @@ Function InstallDOSBox {
 	choco install dosbox -y
 }
 
-Function InstallEpic {
+Function Installdbgl {
+	Write-Output "Installing DOSBox Game Launcher"
+	choco install dbgl -y
+}
+
+Function InstallEpicGames {
 	Write-Output "Installing Epic Games Launcher"
 	choco install epicgameslauncher -y
 }
 
-Function InstallGOG {
-	Write-Output "Installing Gog Galaxy 2"
+Function Installgamesavemanager {
+	Write-Output "Installing Game Save Manager"
+	choco install gamesavemanager -y
+}
+
+Function Installgoggalaxy {
+	Write-Output "Installing GOG Galaxy"
 	choco install goggalaxy -y
+}
+
+Function Installnmm {
+	Write-Output "Installing Nexus Mod Manager"
+	choco install nmm -y
+}
+
+Function InstallORCT2 {
+	Write-Output "Installing Open RCT2"
+	choco install openrct2 -y
+}
+
+Function InstallOrigin {
+	Write-Output "Installing Origin"
+	choco install origin -y
+}
+
+Function InstallPlaynite {
+	Write-Output "Installing Playnite"
+	choco install playnite -y
+}
+
+Function InstallSNES9x {
+	Write-Output "Installing SNES9x"
+	choco install snes9x -y
+}
+
+Function InstallSteam {
+	Write-Output "Installing "
+	choco install steam -y
+}
+
+Function InstallUplay {
+	Write-Output "Installing Uplay"
+	choco install uplay -y
 }
 
 Function InstallGZDoom {
@@ -334,28 +782,124 @@ Function InstallGZDoom {
 	choco install gzdoom -y
 }
 
-Function InstallBRDoom {
-	Write-Output "Installing Brutal Doom"
-	choco install brutaldoom -y
+Function InstallFreeDoom {
+	Write-Output "Installing Freedoom"
+	choco install freedoom -y
 }
-Function InstallDoomskr {
-	Write-Output "Installing Doomseeker"
+
+Function Install {
+	Write-Output "Installing "
+	 -y
+}
+
+Function Installdoomd64rtr {
+	Write-Output "Installing Nintendo 64 project"
+	choco install doom-d64rtr -y
+}
+
+Function InstallQCDE {
+	Write-Output "Installing QC: Doom Edition"
+	choco install qc-doom-edition -y
+}
+
+Function InstallDoomseeker {
+	Write-Output "Installing Doomseeker Universal Browser"
 	choco install doomseeker -y
 }
 
-Function InstallLaunchbox {
-	Write-Output "Installing Launchbox"
-	choco install launchbox -y
+Function InstallSlade {
+	Write-Output "Installing Slade editor"
+	choco install slade -y
 }
 
-Function InstallSteam {
-	Write-Output "Installing Steam"
-	choco install steam -y
+Function InstallBrutalDOOM {
+	Write-Output "Installing BrutalDOOM"
+	choco install brutaldoom -y
 }
 
-Function InstallUplay {
-	Write-Output "Installing Uplay"
-	choco install uplay -y
+Function InstallBDMapSigil {
+	Write-Output "Installing BDMap Sigil"
+	choco install doom-sigil -y
+}
+
+Function InstallDOOMMapdtwid {
+	Write-Output "Installing doom1-maps-dtwid"
+	choco install doom1-maps-dtwid -y
+}
+
+Function InstallBDD2reload {
+	Write-Output "Installing brutaldoom-d2reload"
+	choco install brutaldoom-d2reload -y
+}
+
+Function InstallBDDTWID {
+	Write-Output "Installing brutaldoom-dtwid"
+	choco install brutaldoom-dtwid -y
+}
+
+Function InstallBDEPIC2 {
+	Write-Output "Installing brutaldoom-epic2"
+	choco install brutaldoom-epic2 -y
+}
+
+Function InstallBDGD {
+	Write-Output "Installing brutaldoom-goingdown"
+	choco install brutaldoom-goingdown -y
+}
+
+Function InstallBDHB {
+	Write-Output "Installing brutaldoom-hellbound"
+	choco install brutaldoom-hellbound -y
+}
+
+Function InstallBDKama {
+	Write-Output "Installing brutaldoom-kamasutra"
+	choco install brutaldoom-kamasutra -y
+}
+
+Function InstallBDscythe2 {
+	Write-Output "Installing brutaldoom-scythe2"
+	choco install brutaldoom-scythe2 -y
+}
+
+Function InstallD1MSigil {
+	Write-Output "Installing doom1-maps-sigil"
+	choco install doom1-maps-sigil -y
+}
+
+Function InstallD2btsxel {
+	Write-Output "Installing doom2-maps-btsx-e1"
+	choco install doom2-maps-btsx-e1 -y
+}
+
+Function InstallD2MD2RL {
+	Write-Output "Installing doom2-maps-d2reload"
+	choco install doom2-maps-d2reload -y
+}
+
+Function InstallD2MEpic2 {
+	Write-Output "Installing doom2-maps-epic2"
+	choco install doom2-maps-epic2 -y
+}
+
+Function InstallD2MGD {
+	Write-Output "Installing doom2-maps-goingdown"
+	choco install doom2-maps-goingdown -y
+}
+
+Function InstallD2MNova3 {
+	Write-Output "Installing doom2-maps-nova3"
+	choco install doom2-maps-nova3 -y
+}
+
+Function InstallD2MScyte2 {
+	Write-Output "Installing doom2-maps-scyte2"
+	choco install doom2-maps-scyte2 -y
+}
+
+Function InstallD2MScythe2 {
+	Write-Output "Installing doom2-maps-scythe2"
+	choco install doom2-maps-scythe2 -y
 }
 
 ##########
@@ -931,7 +1475,7 @@ Function EnableCIMemoryIntegrity {
 	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -Name "Enabled" -Type DWord -Value 1
 }
 
-# Disable Core Isolation Memory Integrity - 
+# Disable Core Isolation Memory Integrity -
 Function DisableCIMemoryIntegrity {
 	Write-Output "Disabling Core Isolation Memory Integrity..."
 	Remove-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -Name "Enabled" -ErrorAction SilentlyContinue
@@ -2585,7 +3129,7 @@ Function RequireAdmin {
 
 # Wait for key press
 Function WaitForKey {
-	Write-Output "Press any key to continue & restart"
+	Write-Output "Review Then Press any key to Restart"
 	[Console]::ReadKey($true) | Out-Null
 }
 
@@ -2614,35 +3158,35 @@ Function DisableDarkMode {
 ##########
 
 Function Stop-EdgePDF {
-    
-    #Stops edge from taking over as the default .PDF viewer    
+
+    #Stops edge from taking over as the default .PDF viewer
     Write-Output "Stopping Edge from taking over as the default .PDF viewer"
     $NoPDF = "HKCR:\.pdf"
     $NoProgids = "HKCR:\.pdf\OpenWithProgids"
-    $NoWithList = "HKCR:\.pdf\OpenWithList" 
+    $NoWithList = "HKCR:\.pdf\OpenWithList"
     If (!(Get-ItemProperty $NoPDF  NoOpenWith)) {
-        New-ItemProperty $NoPDF NoOpenWith 
-    }        
+        New-ItemProperty $NoPDF NoOpenWith
+    }
     If (!(Get-ItemProperty $NoPDF  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoPDF  NoStaticDefaultVerb 
-    }        
+        New-ItemProperty $NoPDF  NoStaticDefaultVerb
+    }
     If (!(Get-ItemProperty $NoProgids  NoOpenWith)) {
-        New-ItemProperty $NoProgids  NoOpenWith 
-    }        
+        New-ItemProperty $NoProgids  NoOpenWith
+    }
     If (!(Get-ItemProperty $NoProgids  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoProgids  NoStaticDefaultVerb 
-    }        
+        New-ItemProperty $NoProgids  NoStaticDefaultVerb
+    }
     If (!(Get-ItemProperty $NoWithList  NoOpenWith)) {
         New-ItemProperty $NoWithList  NoOpenWith
-    }        
-    If (!(Get-ItemProperty $NoWithList  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoWithList  NoStaticDefaultVerb 
     }
-            
+    If (!(Get-ItemProperty $NoWithList  NoStaticDefaultVerb)) {
+        New-ItemProperty $NoWithList  NoStaticDefaultVerb
+    }
+
     #Appends an underscore '_' to the Registry key for Edge
     $Edge = "HKCR:\AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_"
     If (Test-Path $Edge) {
-        Set-Item $Edge AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_ 
+        Set-Item $Edge AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_
     }
 }
 
@@ -2693,7 +3237,7 @@ Function DebloatAll {
         "*Sway*"
         "*Speed Test*"
         "*Dolby*"
-             
+
         #Optional: Typically not removed but you can if you need to for some reason
         "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
         "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
