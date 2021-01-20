@@ -933,83 +933,369 @@ choco install smartgit
 choco install smf-player
 choco install smplayer
 choco install smtube
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+choco install sdio
+choco install snes9x
+choco install sniffpass
+choco install softkey-revealer.portable
+choco install softwareinformer
+choco install songr
+choco install sonicvisualiser
+choco install sonicpi
+choco install sonyvegaspro
+choco install soulseek
+choco install soundnode-app
+choco install soundswitch
+choco install sox.portable
+choco install speccy
+choco install specialfoldersview
+choco install speedfan
+choco install speedtest
+choco install speex
+choco install spek
+choco install splash
+choco install splayer
+choco install spybot
+choco install ssd-z.portable
+choco install stardock-fences
+choco install startmenureviver
+choco install start10
+choco install startisback
+choco install startisbackplus
+choco install station
+choco install staxrip
+choco install steam
+choco install steam-cleaner
+choco install steamlibrarymanager.portable
+choco install steelseries-engine
+choco install streaming-video-downloader
+choco install streamlabs-obs
+choco install streamlink
+choco install streamwriter
+choco install stremio
+choco install stress.portable
+choco install studio
+choco install sublimemerge
+choco install sublimetext2
+choco install ethanbrown.sublimetext2.editorpackages
+choco install ethanbrown.sublimetext2.gitpackages
+choco install ethanbrown.sublimetext2.utilpackages
+choco install ethanbrown.sublimetext2.webpackages
+choco install sublimetext2.packagecontrol
+choco install sublimetext2.powershellalias
+choco install sublimetext3
+choco install sublimetext3.packagecontrol
+choco install sublimetext3.powershellalias
+choco install subtitleedit
+choco install subtitleworkshop
+choco install supercollider
+choco install sc3plugins
+choco install supercopier
+choco install sms
+choco install wsl-sles
+choco install svgcleaner
+choco install svg-explorer-extension
+choco install svchost-process-analyzer.portable
+choco install svgo-gui
+choco install sweet-home-3d
+choco install swish
+choco install swissfileknife
+choco install sync
+choco install synergy
+choco install synfig
+choco install sysexp
+choco install sysinternals
+choco install syspin
+choco install systemexplorer
+choco install systraymeter
+choco install tabletextcompare
+
+choco install tabspace
+choco install tabula
+choco install tabular-editor
+choco install tad
+choco install tageditor
+choco install tagscanner
+choco install tartool
+choco install taskinfo
+
+choco install totalcommander
+choco install tccle
+choco install tcp
+choco install tcps
+choco install totalcommanderpowerpack
+choco install tcc-unlit
+choco install tcp-cloud
+choco install tcp-copytree
+choco install tcp-csvview
+choco install tcp-diskdirextended
+choco install tcp-envvars
+choco install tcp-fileinfo
+choco install tcp-iclview
+choco install tcp-linkinfo
+choco install tcp-peviewer
+choco install tcp-qse
+choco install tcp-registry
+choco install tcp-registry
+choco install tcp-shelldetails
+choco install tcp-sqlite
+choco install tcp-startups
+choco install tcp-mediainfo
+choco install tcp-uninstaller
+choco install tcp-virtualpanel
+choco install tcp-webdav
+
+
+choco install teamviewer
+choco install technicians-toolbox
+choco install tempfilecleaner
+choco install teracopy
+choco install terminal-icons.powershell
+choco install termite
+choco install teslamap
+choco install testdisk
+choco install testdisk-photorec
+choco install text-to-mp3-converter
+choco install tftpd32
+choco install keyfinder
+choco install pdftk
+choco install powder-toy
+choco install therenamer
+choco install throttlestop
+choco install thumbsremover
+choco install thumbs-viewer
+choco install thumbs7z
+choco install tidal
+choco install tidytabs
+choco install tidypirate
+choco install time4popcorn
+choco install tinycad
+choco install tmpgenc-karma
+choco install toby-chrome
+choco install tonelib-gfx
+choco install tonelib-zoom
+choco install trackcomp
+choco install trackds
+choco install trackgate
+choco install tracklimit
+choco install trackmeter
+choco install treesizefree
+choco install truepng
+choco install tunein-radio
+choco install tux-paint
+choco install tuxboot
+choco install tuxguitar
+choco install uhe-twangstrom
+choco install allow-block-remove-firewall
+choco install change-dns-servers
+choco install hardware-identify
+choco install kill-frozen-programs
+choco install svchost-lookup-tool
+choco install wsl-ubuntu-2004
+choco install ubuntu.font
+choco install uefitool
+choco install uget
+choco install uhe-uhbik
+choco install ultimate-settings-panel
+choco install ultraiso
+choco install unchecky
+choco install underscore
+choco install unetbootin
+choco install ungit
+choco install ungoogled-chromium
+choco install heaven-benchmark
+choco install superposition-benchmark
+choco install valley-benchmark
+choco install universal-extractor
+choco install uniextract
+choco install universal-usb-installer
+choco install uplay
+choco install urlstringgrabber
+choco install usbdeview
+choco install vb-cable
+choco install vcvrack
+choco install ventoy
+choco install vidcutter
+choco install vidcoder
+choco install victoria
+choco install video-card-stability-test
+choco install videoder
+choco install virtualbox
+choco install virtualbox-guest-additions-guest.install
+choco install virtualdub2
+choco install virtualmidisynth
+choco install virtuawin
+choco install vb5runtime
+choco install visualbcd
+choco install visualboyadvance
+choco install vcredist2013
+choco install vsautoupdater
+choco install vscode
+choco install vivaldi
+choco install vividl
+choco install vlc
+choco install vlc-skins
+choco install vlc-skin-editor
+choco install vlmc
+choco install vmware-tools
+choco install vmware-converter
+choco install vmwareworkstation
+choco install voicemeeter-banana
+choco install voicemeeter
+choco install volume2
+choco install voobly
+choco install vortex
+choco install voxengo-anspec
+choco install voxengo-beeper
+choco install voxengo-bms
+choco install voxengo-boogex
+choco install voxengo-correlometer
+choco install voxengo-crtiv-chorus
+choco install voxengo-crtiv-reverb-2
+choco install voxengo-crtiv-shumovick
+choco install voxengo-crtiv-tape-bus
+choco install voxengo-crunchessor
+choco install voxengo-curveeq
+choco install voxengo-deftcompressor
+choco install voxengo-drumformer
+choco install voxengo-ebuslim
+choco install voxengo-elephant
+choco install voxengo-glisseq
+choco install voxengo-harmonieq
+choco install voxengo-latency-delay
+choco install voxengo-lf-max-punch
+choco install voxengo-marquis-compressor
+choco install voxengo-marvel-geq
+choco install voxengo-msed
+choco install voxengo-oldskoolverb
+choco install voxengo-oldskoolverb-plus
+choco install voxengo-ovc-128
+choco install voxengo-overtone-geq
+choco install voxengo-pha-979
+choco install voxengo-polysquasher3
+choco install voxengo-powershaper
+choco install voxengo-primeeq
+choco install voxengo-r8brain-pro
+choco install voxengo-shinechilla
+choco install voxengo-soniformer
+choco install voxengo-sound-delay
+choco install voxengo-span
+choco install voxengo-span-plus
+choco install voxengo-spatifier
+choco install voxengo-stereo-touch
+choco install voxengo-tempo-delay
+choco install voxengo-teote
+choco install voxengo-transgainer
+choco install voxengo-tube-amp
+choco install voxengo-varisaturator
+choco install voxengo-voxformer
+choco install voxengo-warmifier
+choco install freevideoeditor
+choco install vuescan
+choco install vsthost
+choco install waterfox
+choco install wavesurfer
+choco install wavosaur
+choco install wavpack
+choco install wavpack7z
+choco install webbrowserpassview
+choco install webcamimagesave
+choco install webcamoid
+choco install data-lifeguard-diagnostic
+choco install universal-firmware-updater
+choco install whatishang
+choco install wallcat
+choco install webrecorderplayer
+choco install websitesniffer
+choco install whois
+choco install whoisconnectedsniffer
+choco install whoistd
+choco install wit
+choco install wszst
+choco install wimlib
+choco install win-xkill
+choco install win-youtube-dl
+choco install win32diskimager
+choco install winaero-tweaker
+choco install winamp
+choco install wincdemu
+choco install win10mct
+choco install windows-adk-all
+choco install desktopicons-winconfig
+choco install explorer-winconfig
+choco install windowsrepair
+choco install windows-repair-toolbox
+choco install windows-sandbox
+choco install wsl
+choco install wsl2
+choco install taskbar-winconfig
+choco install windowssystemcontrolcenter
+choco install windows-tweaker
+choco install wudt
+choco install windowsxappremover
+choco install wingrub
+choco install winhotkey
+choco install winhue
+choco install winja
+choco install winmerge
+choco install winmerge-7z
+choco install winmtr-redux
+choco install winpatrol
+choco install winscan2pdf
+choco install winscp
+choco install winsecuritybaseline
+choco install winsys
+choco install wul
+choco install winvdig
+choco install winvice
+choco install wincompose
+choco install windirstat
+choco install windjview
+choco install windowblinds
+choco install winyl-player
+choco install wireframesketcher
+choco install wisemo
+choco install wixtoolset
+choco install wix35
+choco install wixedit
+choco install wiztree
+choco install wkhtmltopdf
+choco install wmiexplorer
+choco install wolfpack
+choco install workcad
+choco install wsus-offline-update
+choco install wumgr
+choco install wxmp3gain
+choco install x32-edit
+choco install xboot
+choco install xmplay
+choco install xnconvert
+choco install xnview
+choco install xnviewmp
+choco install xrecode3
+choco install xdm
+choco install xvst
+choco install yabause
+choco install youtube-dl-gui
+choco install youtube-mp3
+choco install youtube-dl
+choco install youtube-downloader
+choco install yumi
+choco install yumi-uefi
+choco install zadig
+choco install zandronum
+choco install uhe-zebra2
+choco install zephyr-qemu
+choco install zsnes
+choco install zvirtualdesktop
+choco install wpd
+choco install wslgit
+choco install wsudo
+choco install xml-copy-editor
+choco install xmlformatter
+
+choco install wubi
+choco install wox
+
+NOT MODERATED AS OG 01/14/2020
+choco install wincy
+choco install wincyapk
