@@ -6,45 +6,812 @@ notepad++
 powertoys
 VSCode
 
+choco install dotnet4.6.2
+choco install choco-cleaner
+choco install choco-shortcuts-winconfig
+choco install choco-install-packages-from-web-winconfig
+choco install instchoco
+choco install dotnet5-desktop-runtime
+choco install dotnetcore3-desktop-runtime
+choco install dogtail.dotnet3.5sp1
+choco install 0ad
+choco install 010editor
+choco install 3dmark
+choco install 4k-video-downloader
+choco install 7-taskbar-tweaker
+choco install 7zip
+choco install 8gadgetpack
+choco install uhe-ace
+choco install acestream
+choco install acronis-drive-monitor
+choco install acronis-vdi
+choco install advanced-bat-to-exe-converter
+choco install advanced-file-finder
+choco install advanced-installer
+choco install advancedsystemtweaker
+choco install ags
+choco install adwcleaner
+choco install aida64-business
+choco install aida64-engineer
+choco install aida64-extreme
+choco install aida64-networkaudit
+choco install airdroid
+choco install amazon-music
+choco install amazon-music-chrome
+choco install amd-ryzen-chipset
+choco install amiduos
+choco install ampfontviewer
+choco install angryip
+choco install antimicro
+choco install anyvideoconverter
+choco install anydvd
+choco install anyrail6
+choco install appinstallrecorder
+choco install appaudioconfig
+choco install araxismerge
+choco install wsl-archlinux
+choco install arduino-cli
+choco install arduino
+choco install arduinoidegalileo
+choco install vscode-arduino
+choco install asio4all
+choco install astrogrep
+choco install atom
+choco install atraci
+choco install attributechanger
+choco install atubecatcher
+choco install audacity
+choco install audio-router
+choco install audioswitcher
+choco install audioflyout
+choco install audioshell
+choco install project-aurora
+choco install autobootdisk
+choco install autologon
+choco install avidemux
+choco install avinaptic
+choco install babelmap
+choco install babelpad
+choco install back-to-backspace-chrome
+choco install doom2-maps-btsx-e1
+choco install doom2-maps-btsx-e2
+choco install bandizip
+choco install bandlab-assistant
+choco install basilisk
+choco install battoexeconverter
+choco install battle.net
+choco install bbc-iplayer
+choco install bethesdanet
+choco install bitwarden
+choco install bitwig
+choco install blackbird
+choco install bleachbit
+choco install bless
+choco install borderlessgaming
+choco install brave
+choco install browser-select
+choco install browsinghistoryview
+choco install brutaldoom
+choco install doom-sigil
+choco install brutaldoom-d2reload
+choco install brutaldoom-dtwid
+choco install brutaldoom-epic2
+choco install brutaldoom-goingdown
+choco install brutaldoom-hellbound
+choco install brutaldoom-kamasutra
+choco install brutaldoom-scythe2
+choco install bsnes
+choco install bsnes-hd
+choco install bsplayer
+choco install bulk-crap-uninstaller
+choco install bulkrenamecommand
+choco install bulkrenameutility
+choco install burnawarefree
+choco install burnawarepremium
+choco install burnawarepro
+choco install busybox
+choco install cadconverter
+choco install caesium.install
+choco install caffeine
+choco install cairoshell
+choco install calculator.net
+choco install calibre
+choco install nzxt-cam
+choco install camstudio
+choco install camtasia
+choco install captureflux
+choco install carbon
+choco install cascadiafonts
+choco install cdburnerxp
+choco install cdex
+choco install cemu
+choco install centbrowser
+choco install cerebro
+choco install chainlp
+choco install change-screen-resolution
+choco install cheatengine
+choco install checksum
+choco install cherrytree
+choco install chocolateypackageupdater
+choco install au
+choco install chocolatey-core.extension
+choco install chocolateyexplorer
+choco install chocolateygui
+choco install chocolatey-preinstaller-checks.extension
+choco install chocoshortcuts
+choco install chocolatey-autoupdater
+choco install choco-update-notifier
+choco install chromium
+choco install clamsentinel
+choco install clamav
+choco install clamwin
+choco install classic-shell
+choco install clavier-plus
+choco install cleanafterme
+choco install cleanmgrplus
+choco install clickie
+choco install clipgrab
+choco install cloneapp
+choco install clonespy
+choco install closethedoor
+choco install clover
+choco install cmake
+choco install cmdaliases
+choco install cmder
+choco install battecode.cmder.dev
+choco install cmderplus
+choco install cmdutils
+choco install cobian-backup
+choco install codeauditor
+choco install colora
+choco install colormania
+choco install colorpic
+choco install compactgui
+choco install compactor
+choco install uhe-colourcopy
+choco install comic-collector
+choco install comicrack
+choco install comicreader-plex
+choco install cmdhere
+choco install conemu
+choco install compareit
+choco install compassion
+choco install compdf
+choco install composer
+choco install composercat
+choco install compressonator-cli
+choco install consoleclassix
+choco install console2
+choco install consolez
+choco install consolez.settings
+choco install consolez.withpin
+choco install consul
+choco install contextmenumanager
+choco install convertall
+choco install coolterm
+choco install copyfilename
+choco install copypathmenu
+choco install copyq
+choco install coreinfo
+choco install coretemp
+choco install cue
+choco install icue
+choco install corsixth
+choco install countrytraceroute
+choco install cpu-z
+choco install create-synchronicity
+choco install crosextrafonts-caladea-font
+choco install croscorefonts-font
+choco install crossftp
+choco install crystaldiskinfo
+choco install crystaldiskmark
+choco install csvconverter
+choco install csved
+choco install csvfileview
+choco install cubepdf
+choco install cubepdfutility
+choco install cudatext
+choco install cuemounter.portable
+choco install curl
+choco install ctie
+choco install cute-cw
+choco install cutemarked
+choco install cutepdf
+choco install cw-teacher
+choco install cyberduck
+choco install cyberfox
+choco install cygwin
+choco install cyg-get
+choco install d4t-addons-accurate-music
+choco install darkroom
+choco install darktable
+choco install dashlane
+choco install dashlane-chrome
+choco install wsl-debiangnulinux
+choco install iceweasel
+choco install debotnet
+choco install debugdiagnostic
+choco install deepvocal
+choco install deezer
+choco install defaultprogramseditor
+choco install defraggler
+choco install dejavufonts
+choco install font-nerd-dejavusansmono
+choco install deluge
+choco install dependencies
+choco install dependencywalker
+choco install dependency-scanner
+choco install depressurizer
+choco install designsparkpcb
+choco install desk-drive
+choco install desktopinfo
+choco install desktops
+choco install desura
+choco install die
+choco install devbox-clink
+choco install devbox-nano
+choco install devmanview
+choco install diffuse
+choco install digikam
+choco install dilay
+choco install directoryopus
+choco install directx
+choco install disable-nvidia-telemetry
+choco install disableofficenag-winconfig
+choco install disable-smb-v1
+choco install disableuac
+choco install disable-logon-blur
+choco install disable-windows10-upgrade
+choco install config-disablebeep
+choco install disabledefender-winconfig
+choco install windowsupdate.disableautorestart
+choco install disablewintracking
+choco install discord
+choco install discoverj
+choco install disk2vhd
+choco install diskcountersview
+choco install diskext
+choco install diskgenius
+choco install diskmarkstream
+choco install disksmartview
+choco install diskview
+choco install dismplusplus
+choco install dispcalgui
+choco install displaycal
+choco install uhe-diva
+choco install djv
+choco install divvy
+choco install dllexp
+choco install docconverter
+choco install docto
+choco install dolphin
+choco install donkeykong
+choco install donkeykongjr
+choco install doom2-maps-d2reload
+choco install doom1-maps-dtwid
+choco install doom-d64rtr
+choco install doom4-death-foretold
+choco install doomsday
+choco install doomseeker
+choco install dopamine
+choco install dos2unix
+choco install dosbox
+choco install dbgl
+choco install dosbox-x
+choco install dotnet3.5
+choco install dotnet4.0
+choco install dotnet4.5
+choco install dotnet4.5.1
+choco install dotnet4.5.2
+choco install dotnetversiondetector
+choco install doubledriver
+choco install doublecadxt
+choco install downloadapp
+choco install doxybook2
+choco install driverbooster
+choco install drivereasyfree
+choco install driverfusion
+choco install drivergenius
+choco install driverpacksolution
+choco install rapr
+choco install drivermax
+choco install driverview
+choco install droidfonts
+choco install dropbox
+choco install dropit
+choco install ds4windows
+choco install dspeech
+choco install dsynchronize
+choco install dualism
+choco install duckietv
+choco install dumo
+choco install dupeguru
+choco install dupeguru-me
+choco install dupeguru-pe
+choco install duplicatecleaner
+choco install duplicatefilefinder
+choco install dvddecrypter
+choco install dvdflick-v2
+choco install passkey
+choco install dvdstyler
+choco install dws.portable
+choco install dxwnd
+choco install dymo-label
+choco install eagle
+choco install eagleget
+choco install earthview-chrome
+choco install ecm
+choco install easytag
+choco install easytune6
+choco install edgedeflector
+choco install edrawings-viewer-2019
+choco install edrawings-viewer
+choco install eduke32
+choco install efsdump
+choco install emacs-full
+choco install elsie
+choco install emdb
+choco install emeditor
+choco install emulationstation
+choco install emulsion
+choco install ekeyfinder
+choco install englishizecmd
+choco install epicgameslauncher
+choco install doom2-maps-epic2
+choco install equality
+choco install equalizerapo
+choco install equick
+choco install equilibrium
+choco install essence
+choco install etcher
+choco install everything
+choco install evga-eleet
+choco install evga-precision-x1
+choco install evga-precision-xoc
+choco install eac
+choco install excelconverter
+choco install executor
+choco install exeinfo
+choco install exfat7z
+choco install exiftool
+choco install exiftoolgui
+choco install explorerplusplus
+choco install explorersuite
+choco install ext2explore
+choco install ext2fsd
+choco install fastcopy
+choco install fsviewer
+choco install favbinedit
+choco install faview
+choco install fbreader
+choco install ffftp
+choco install ffmpeg
+choco install ffmpeg-batch
+choco install ffmpeg-shared
+choco install audacity-ffmpeg
+choco install file-converter
+choco install filelist
+choco install files
+choco install firmwaretablesview
+choco install flac
+choco install flacsquisher
+choco install fmedia
+choco install foldercolorizer
+choco install folder-marker
+choco install foldermenu3
+choco install folder_size
+choco install folderchangesview
+choco install foldersizes
+choco install fah
+choco install fontbase
+choco install fontforge
+choco install git-fork
+choco install formatfactory
+choco install fraps
+choco install freac
+choco install freecad
+choco install freedoom
+choco install freemake-audio-converter
+choco install freemake-video-converter
+choco install frhed
+choco install friture
+choco install fritzing
+choco install fudge
+choco install furmark
+choco install futuremark-systeminfo
+choco install gbm
+choco install game-collector
+choco install gamedownloader
+choco install game-key-revealer.portable
+choco install gamesavemanager
+choco install geforce-game-ready-driver
+choco install getdiz
+choco install getiplayer
+choco install gimp
+choco install git
+choco install git-cola
+choco install git-credential-manager-for-windows
+choco install git-lfx
+choco install gitdiffmargin
+choco install gitextensions
+choco install git-lfs
+choco install git-flow-hooks
+choco install git-flow-dependencies
+choco install git-helper
+choco install git-it
+choco install git-sizer
+choco install gitahead
+choco install gitbook-editor
+choco install github-desktop
+choco install gitkraken
+choco install glimpse
+choco install godmode
+choco install goggalaxy
+choco install doom2-maps-goingdown
+choco install gom-player
+choco install google-books-downloader
+choco install google-calendar-chrome
+choco install googlechrome
+choco install googledrive
+choco install google-drive-file-stream
+choco install google-drive-add-to-explorer
+choco install gpu-z
+choco install gpxeditor
+choco install glmixer
+choco install grub2win
+choco install grubinst
+choco install gsmartcontrol
+choco install gstreamer
+choco install gsubs
+choco install gtkwave
+choco install guitarhub
+choco install guitar-pro
+choco install windowserrorlookuptool
+choco install gzdoom
+choco install hakchi2.portable
+choco install handbrake
+choco install hdtune
+choco install hddguardian
+choco install headset
+choco install heavyload
+choco install helio-workstation
+choco install hex2dec
+choco install uhexen2
+choco install higan
+choco install hijackthis
+choco install hitmanpro
+choco install uhe-hive
+choco install hosts.editor
+choco install hot-chocolatey
+choco install htmlconverter
+choco install httrack
+choco install hub
+choco install hwinfo
+choco install hwmonitor
+choco install hxd
+choco install hybrid
+choco install icaros
+choco install icecast
+choco install icofx
+choco install iconizer
+choco install iconsext
+choco install icopy
+choco install imageanalyzer
+choco install image-composite-editor
+choco install imageresizerapp
+choco install imageglass
+choco install imagemagick
+choco install imageusb
+choco install imdisk
+choco install imdisk-toolkit
+choco install imgburn
+choco install infekt
+choco install infrarecorder
+choco install initool
+choco install injecteddll
+choco install inkscape
+choco install insync
+choco install intel-processor-identification-utility
+choco install intel-chipset-device-software
+choco install intel-dsa
+choco install intel-xtu
+choco install intel-mas
+choco install intel-network-drivers-win10
+choco install ospray
+choco install intelpowergadget
+choco install intel-ipdt
+choco install intel-rst-driver
+choco install inter
+choco install ipvanish
+choco install irfanview
+choco install irfanviewplugins
+choco install irfanview-shellextension
+choco install iridium-browser
+choco install isorecorder
+choco install isowriter
+choco install iso7z
+choco install isoplex
+choco install jack
+choco install jellyfin
+choco install jbs
+choco install joytokey
+choco install jpegview
+choco install jsonedit
+choco install jcpicker
+choco install jwcad
+choco install k-meleon
+choco install kafka
+choco install kafka-tool
+choco install wsl-kalilinux
+choco install kantu-xmodules
+choco install kcleaner
+choco install kdiff3
+choco install kega-fusion
+choco install keyhac
+choco install keypirinha
+choco install keytweak
+choco install kicad
+choco install lame
+choco install audacity-lame
+choco install lame-front-end
+choco install lamexp
+choco install lammercontextmenu
+choco install lastpass
+choco install lastpass-for-applications
+choco install latencymon
+choco install lato
+choco install launchbox
+choco install launchy
+choco install legendary
+choco install lepton
+choco install lessmsi
+choco install lgbridge
+choco install liberationfonts
+choco install libre-hardware-monitor
+choco install librecad
+choco install libreelec-usb-sd-creator
+choco install librefox-firefox
+choco install libreoffice-fresh
+choco install libreoffice-help
+choco install lightalloy
+choco install limitless
+choco install line6monkey
+choco install lili
+choco install listdlls
+choco install lmms
+choco install unifying-fut
+choco install logitechgaming
+choco install logitech-options
+choco install setpoint
+choco install logitech-webcam-software
+choco install lossless-audio-checker
+choco install lossless-cut
+choco install lunacy
+choco install lyricsfinder
+choco install macaddressview
+choco install makehuman
+choco install makemkv
+choco install mame
+choco install manycam
+choco install maptool
+choco install marble
+choco install markdown-generator
+choco install markdownmonster
+choco install masgau
+choco install master-pdf-editor
+choco install maxthon
+choco install mbruler
+choco install stinger
+choco install mednafen
+choco install megatools
+choco install megui
+choco install meld
+choco install mellowplayer
+choco install memprofiler
+choco install meshmixer
+choco install meshroom
+choco install meshlab
+choco install metafox
+choco install metropolislauncher
+choco install uhe-mfm2
+choco install mgba
+choco install dotnet
+choco install dotnet-5.0-desktopruntime
+choco install dotnet-5.0-runtime
+choco install dotnetcore
+choco install dotnetcore-2.0-runtime
+choco install dotnetcore-2.1-runtime
+choco install dotnetcore-2.2-runtime
+choco install dotnetcore-3.0-desktopruntime
+choco install dotnetcore-3.0-runtime
+choco install dotnetcore-3.1-desktopruntime
+choco install dotnetcore-3.1-runtime
+choco install dotnetcore-desktopruntime
+choco install dotnetcore-runtime
+choco install dotnet-desktopruntime
+choco install dotnet1.1
+choco install dotnet4.6
+choco install dotnet4.6.1
+choco install netfx-4.6.2
+choco install dotnet4.7
+choco install dotnet4.7.1
+choco install dotnet4.7.2
+choco install dotnetfx
+choco install netfx-4.8
+choco install netfx-repair-tool
+choco install dotnet-runtime
+choco install dotnetcore-2.1-aspnetruntime
+choco install dotnetcore-2.2-aspnetruntime
+choco install dotnetcore-3.0-aspnetruntime
+choco install dotnetcore-3.1-aspnetruntime
+choco install dotnet-5.0-aspnetruntime
+choco install dotnet-aspnetcoremodule-v1
+choco install dotnet-aspnetcoremodule-v2
+choco install dotnet-aspnetruntime
+choco install msxml6.sp1
+choco install keyboard-layout-creator
+choco install microsoft-powershellforgithub-psmodule
+choco install midi2lr
+choco install midori-browser
+choco install milton
+choco install mvc
 
-chocolateygui
-atom
-googlechrome
-Vitualbox
-vlc
-git.install
-dotnet
-teamviewer
-pdfcreator
-gimp
-libreoffice-fresh
-inkscape
-procexp
-youtube-dl
-wsus-offline-update
-audacity
-sublimetext3
-steam
-classic-shell
-rufus
-brave
-cpu-z
-googledrive
-chocolateypackageupdater
-etcher
-vivaldi
-nvidia-display-driver
-poweriso
-origin
-obs-studio
-github-desktop
-mp3tag
-directx
-handbrake
-gpu-z
-audacity-lame
-uplay
-hwinfo
-oldcalc
-yumi
-epicgameslauncher
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
