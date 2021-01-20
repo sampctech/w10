@@ -846,95 +846,93 @@ choco install qc-doom-edition
 choco install qcad
 choco install qemu
 choco install qemu-img
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+choco install any2ico
+choco install quickviewer
+choco install quodlibet
+choco install riot
+choco install rammap
+choco install rpi-imager
+choco install rawcooked
+choco install rawwrite
+choco install rayman-controlpanel
+choco install realtek-hd-audio-driver
+choco install realtemp
+choco install reapack
+choco install reaper
+choco install reaper-sws-extension
+choco install reason
+choco install intel-redist-cpp
+choco install regalyzer
+choco install regard3d
+choco install renamemaster
+choco install renamemytvseries2
+choco install renamer
+choco install renesas-usb-3-0-driver
+choco install repositorycleaner
+choco install uhe-repro
+choco install residualvm
+choco install resonic
+choco install reshack
+choco install retroarch
+choco install revouninstallerpro
+choco install rocketdock
+choco install rocrail
+choco install roomarranger
+choco install roomeqwizard
+choco install rosaimagewriter
+choco install rtl-utility
+choco install rsvg-convert
+choco install rufus
+choco install s3browser
+choco install samsung-kies
+choco install samsung-nvme-driver
+choco install sidesync
+choco install samsung-usb-driver
+choco install sandboxie
+choco install sandcastle
+choco install uhe-satin
+choco install scarm
+choco install scrcpy
+choco install screamer
+choco install scummvm
+choco install doom2-maps-scythe2
+choco install sd-card-formatter
+choco install searchmyfiles
+choco install searchwithmybrowser
+choco install seatools
+choco install section-9-regular-font
+choco install seppdf
+choco install servicetriggereditor
+choco install serviio
+choco install serviwin
+choco install setdefaultbrowser
+choco install settingsmanager
+choco install advanced-codecs
+choco install shotcut
+choco install shman
+choco install sigil
+choco install doom1-maps-sigil
+choco install signalfx-agent
+choco install simpleradiorecorder
+choco install simplesystemtweaker
+choco install simplewavsplitter-avalonia
+choco install simplewavsplitter-wpf
+choco install simulide
+choco install simutrans
+choco install simutrans-pak128
+choco install simutrans-pak64
+choco install sinon
+choco install siw
+choco install sizeexplorer
+choco install sketchbook
+choco install sketchup
+choco install sketchupviewer
+choco install slade
+choco install slic3r
+choco install smartgit
+choco install smf-player
+choco install smplayer
+choco install smtube
 
 
 
