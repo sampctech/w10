@@ -1,0 +1,134 @@
+This is a helper doc wit hhelpful links to get going on HOW TO properly start writing the install script.
+I will use the chocolatey doc I already created to setup the test once (if) I figure this all out.
+
+======================================================================================
+All of your questions could be answered by looking at the PowerShell help files and Microsoft tech documentation:
+
+--------------------------------------------------------------------------------------
+(Get-Command -Name Test-Path).Parameters
+Get-help -Name Test-Path -Examples
+Get-help -Name Test-Path -Full
+Get-help -Name Test-Path -Online
+--------------------------------------------------------------------------------------
+For loops
+
+    About For         | https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_for?view=powershell-5.1
+    About ForEach     | https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_foreach?view=powershell-5.1
+    PowerShell Loops  | https://social.technet.microsoft.com/wiki/contents/articles/4542.powershell-loops.aspx
+
+======================================================================================
+   -y makes them run without a prompt.
+
+--------------------------------------------------------------------------------------
+    The script should check if Chocolatey is installed and if not, run the install script.
+    Then it should loop through a list of package names and silently install them.
+
+    • How do I detect if Chocolatey is already installed?
+--------------------------------------------------------------------------------------
+Use PowerShell to Quickly Find Installed Software
+https://blogs.technet.microsoft.com/heyscriptingguy/2011/11/13/use-powershell-to-quickly-find-installed-software/
+
+Use the link above - or there is an environment variable set on installation, ChocolateyInstall which is set to C:\ProgramData\Chocolatey by default.
+
+--------------------------------------------------------------------------------------
+Test-Path -Path "$env:ProgramData\Chocolatey"
+--------------------------------------------------------------------------------------
+
+A more deterministic way may be to try
+--------------------------------------------------------------------------------------
+$ChocoInstalled = $false
+if (Get-Command choco.exe -ErrorAction SilentlyContinue) {
+    $ChocoInstalled = $true
+}
+
+# Do something with that for installation
+--------------------------------------------------------------------------------------
+
+    • How do I conditionally run the install command based on that result?
+
+Using an if statement:
+--------------------------------------------------------------------------------------
+If(Test-Path -Path "$env:ProgramData\Chocolatey") {
+    DoYourPackageInstallStuff}
+Else {
+    InstallChoco
+    DoYourPackageInstallStuff
+}
+--------------------------------------------------------------------------------------
+    • How do I loop through a list of packages and run the choco install command on each?
+
+Using a for loop:
+--------------------------------------------------------------------------------------
+$Packages = 'googlechrome', 'git', 'notepadplusplus', 'sql-server-management-studio'
+
+ForEach ($PackageName in $Packages)
+{
+    choco install $PackageName -y
+}
+--------------------------------------------------------------------------------------
+
+======================================================================================
+
+Also, Luuk Grefte has created 
+choco-autoinstalller
+
+You can get it here:
+https://gitlab.com/luukgrefte/choco-autoinstalller
+
+The auto installer uses a .config file to list options to be installed.
+Am going to figure out how to open & edit this. Hopefully in SublimeText or Atom.
+
+======================================================================================
+I also came across this info. It looks like it combines everything above
+
+with a file that contains the list of the packages:
+--------------------------------------------------------------------------------------
+#Requires -RunAsAdministrator
+
+Set-ExecutionPolicy Bypass -Scope Process -Force
+
+# install chocolatey if not installed
+if (!(Test-Path -Path "$env:ProgramData\Chocolatey")) {
+  Invoke-Expression((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+}
+
+# for each package in the list run install
+Get-Content ".\packages" | ForEach-Object{($_ -split "\r\n")[0]} | ForEach-Object{choco install -y $_}
+--------------------------------------------------------------------------------------
+Assuming there is in this path a file named packages with the following content:
+--------------------------------------------------------------------------------------
+googlechrome
+git
+notepadplusplus
+sql-server-management-studio
+--------------------------------------------------------------------------------------
+
+Run this script in powershell (checked in version 5):
+--------------------------------------------------------------------------------------
+powershell -executionpolicy bypass -File C:\Users\mypath\home_env_powershell_scr.ps1
+--------------------------------------------------------------------------------------
+
+Content of 
+home_env_powershell_scr.ps1
+--------------------------------------------------------------------------------------
+$Packages = 'googlechrome',
+            'git'
+ 
+If(Test-Path -Path "$env:ProgramData\Chocolatey") {
+  # DoYourPackageInstallStuff
+  ForEach ($PackageName in $Packages)
+    {
+        choco install $PackageName -y
+    }
+}
+Else {
+  # InstallChoco
+  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))      
+
+  # DoYourPackageInstallStuff
+  ForEach ($PackageName in $Packages)
+    {
+        choco install $PackageName -y
+    }
+}
+--------------------------------------------------------------------------------------
