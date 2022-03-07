@@ -1,0 +1,3 @@
+# this is choco install for w10 21H1 ghost 
+
+choco install amazon-music goggalaxy hidevolumeosd playnite -y
